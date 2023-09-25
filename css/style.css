@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+}
+
+h1{
+    color: #679F5B;
+    text-align: center;
+    padding: 25px;
+    font-size: 50px;
+}
+
+h2{
+    color: #DC965A;
+    font-size: 40px;
+    margin: 50px;
+    text-align: center;
+}
+
+h3{
+    color: #DC965A;
+    font-size: 30px;
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+#cabecera{
+    background-color: #8d68b5;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 80px;
+    font-size: larger;
+}
+
+nav a{
+    text-decoration: none;
+    color: #DC965A;
+}
+
+nav ul{
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+}
+
+nav ul li{
+    margin: 15px;
+}
+
+main{
+    background-color: #3d1466;
+}
+
+.fixed{
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    display: inline;
+}
+
+.nosotros p{
+    font-size: 30px;
+    text-align: center;
+}
+
+.nosotros img{
+    height: 500px;
+    width: 500px;
+    margin-left: 675px;
+}
+
+section form div{
+    border: 2px solid black;
+    width: fit-content;
+    height: 25px;
+}
+
+#pie{
+    background-color: #8d68b5;
+    text-align: center;
+}
+
+#pie div h4{
+    color: #DC965A;
+}
+
+#pie div a{
+    color: #DC965A;
+    text-decoration: none;
+}
+
+#pie div ol li{
+    display: inline-block;
+}
+
+.primeraorden{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.primeraorden div{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primeraorden div img{
+    height: 250px;
+    width: 250px;
+    text-align: center;
+}
+
+.trabajos div{
+    display: flex;
+    justify-content: center;
+    border: 4px transparent solid;
+    flex-wrap: wrap;
+}
+
+.trabajos div img{
+    height: 250px;
+    width: 250px;
+}
+
+.pixelart div img{
+    height: 250px;
+    width: 250px;
+}
+
+.retratos div img{
+    height: 250px;
+    width: 250px;
+}
+
+.stickers div img{
+    height: 250px;
+    width: 250px;
+}
+
+.encuesta div{
+    display: flex;
+}
