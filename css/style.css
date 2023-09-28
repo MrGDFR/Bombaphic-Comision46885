@@ -7,7 +7,7 @@
 }
 
 h1{
-    color: #679F5B;
+    color: #1d9602;
     text-align: center;
     padding: 25px;
     font-size: 50px;
@@ -16,7 +16,7 @@ h1{
 h2{
     color: #DC965A;
     font-size: 40px;
-    margin: 50px;
+    padding: 50px;
     text-align: center;
 }
 
@@ -25,37 +25,58 @@ h3{
     font-size: 30px;
     border: 2px solid transparent;
     text-align: center;
+    padding: 25px;
+}
+
+h3:hover{
+    color: #8d68b5;
 }
 
 #cabecera{
     background-color: #8d68b5;
+    background-size: cover;
     height: 100%;
     width: 100%;
+}
+
+#cabecera div{
     display: flex;
+    align-items: center;
+}
+
+#cabecera div h1{
+    margin-left: 25px;
 }
 
 nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
     width: 100%;
     padding-right: 80px;
     font-size: larger;
+    background-color: #8d68b5;
+    grid-template-columns: auto(3, 1fr);
 }
 
 nav a{
     text-decoration: none;
     color: #DC965A;
+    align-items: start;
 }
 
 nav ul{
     list-style: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 nav ul li{
     margin: 15px;
+}
+
+nav ul li a:hover{
+    color: #8d68b5;
 }
 
 main{
@@ -91,21 +112,18 @@ section form div{
     text-align: center;
 }
 
-#pie div h4{
-    color: #DC965A;
-}
-
 #pie div a{
     color: #DC965A;
     text-decoration: none;
 }
 
 #pie div ol li{
-    display: inline-block;
+    display: inline-flex;
 }
 
 .primeraorden{
     display: grid;
+    margin: 0 auto;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -132,23 +150,101 @@ section form div{
 .trabajos div img{
     height: 250px;
     width: 250px;
+    padding: 1px;
+}
+
+.pixelart div{
+    display: flex;
+    justify-content: center;
+    border: 4px transparent solid;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .pixelart div img{
     height: 250px;
     width: 250px;
+    margin: 5px;
+}
+
+.retratos div{
+    display: flex;
+    justify-content: center;
+    border: 4px transparent solid;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .retratos div img{
     height: 250px;
     width: 250px;
+    margin: 5px;
+}
+
+.stickers div{
+    display: flex;
+    justify-content: center;
+    border: 4px transparent solid;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .stickers div img{
     height: 250px;
     width: 250px;
+    margin: 5px;
 }
 
 .encuesta div{
     display: flex;
+}
+
+@media screen and (max-width:1300px){
+    #cabecera div{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1000px){
+    #cabecera div h1{
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width:1300px){
+    .primeraorden{
+        width: 100%;
+        margin: 0;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:1000px){
+    .primeraorden{
+        width: 100%;
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:800px){
+    .primeraorden{
+        width: 100%;
+        margin: 0%;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:650px){
+    nav ul{
+        display: grid;
+        width: 100%;
+        font-size: smaller;
+        background-color: #8d68b5;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
