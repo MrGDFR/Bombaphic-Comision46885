@@ -132,6 +132,7 @@ section form div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: transparent;
 }
 
 .primeraorden div img{
@@ -233,9 +234,10 @@ section form div{
 @media screen and (max-width:800px){
     .primeraorden{
         width: 100%;
-        margin: 0%;
         grid-template-columns: 1fr;
         justify-content: center;
+        align-items: center;
+        padding-left: 0% auto;
     }
 }
 
@@ -246,5 +248,6 @@ section form div{
         font-size: smaller;
         background-color: #8d68b5;
         grid-template-columns: repeat(3, 1fr);
+        padding: 0%;
     }
 }
